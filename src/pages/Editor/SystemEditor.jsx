@@ -216,9 +216,11 @@ const SystemEditor = () => {
               >
                 {previewMode ? '📝 Edit' : '👁️ Preview'}
               </button>
-              
-              <button className="btn-secondary">
-                Export
+                <button
+                onClick={() => navigate(`/system/${id}/preview`)}
+                className="btn-secondary"
+              >
+                📤 Preview & Export
               </button>
               
               <button className="btn-primary">

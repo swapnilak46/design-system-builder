@@ -10,6 +10,7 @@ import ComponentDetail from '../pages/Components/ComponentDetail';
 import Foundations from '../pages/Foundations/Foundations';
 import Documentation from '../pages/Documentation/Documentation';
 import Profile from '../pages/Profile/Profile';
+import PreviewExport from '../pages/PreviewExport/PreviewExport';
 import NotFound from '../pages/NotFound/NotFound';
 import ProtectedRoute from '../components/Auth/ProtectedRoute';
 
@@ -49,12 +50,19 @@ export const router = createBrowserRouter([
             <SystemDetail />
           </ProtectedRoute>
         ),
-      },
-      {
+      },      {
         path: 'system/:id',
         element: (
           <ProtectedRoute>
             <SystemDetail />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'system/:id/preview',
+        element: (
+          <ProtectedRoute>
+            <PreviewExport />
           </ProtectedRoute>
         ),
       },
