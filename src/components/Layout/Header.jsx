@@ -1,22 +1,8 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
-import { logoutUser } from '../../store/slices/authSlice';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const { isAuthenticated, user } = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const handleLogout = async () => {
-    try {
-      await dispatch(logoutUser()).unwrap();
-      navigate('/');
-    } catch (error) {
-      console.error('Logout failed:', error);
-      // Even if logout fails, clear local state and redirect
-      navigate('/');
-    }
-  };
-
+  const { isAuthenticated } = useSelector((state) => state.auth);
   return (
     <header className="glass-effect sticky top-0 z-50 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,51 +25,10 @@ const Header = () => {
             >
               Home
             </Link>
-            {isAuthenticated && (
-              <>
-                <Link
-                  to="/dashboard"
-                  className="btn-ghost"
-                >
-                  Dashboard
-                </Link>
-                <Link
-                  to="/design-systems"
-                  className="btn-ghost"
-                >
-                  Design Systems
-                </Link>
-                <Link
-                  to="/components"
-                  className="btn-ghost"
-                >
-                  Components
-                </Link>
-              </>
-            )}
           </nav>
 
           <div className="flex items-center space-x-4">
-            {isAuthenticated ? (
-              <div className="flex items-center space-x-4">
-                <div className="hidden sm:flex items-center space-x-3 bg-white/50 rounded-xl px-4 py-2 backdrop-blur-sm">
-                  <div className="w-8 h-8 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center">
-                    <span className="text-white font-semibold text-sm">
-                      {user?.name?.charAt(0) || 'U'}
-                    </span>
-                  </div>
-                  <span className="text-sm font-medium text-secondary-700">
-                    {user?.name || 'User'}
-                  </span>
-                </div>
-                <button
-                  onClick={handleLogout}
-                  className="btn-secondary text-sm"
-                >
-                  Logout
-                </button>
-              </div>
-            ) : (
+            {!isAuthenticated && (
               <Link to="/login" className="btn-primary">
                 Sign In
               </Link>

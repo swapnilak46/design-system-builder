@@ -8,10 +8,10 @@ const Layout = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-secondary-50 via-white to-primary-50">
-      <Header />
+      {!isAuthenticated && <Header />}
       <div className="flex">
         {isAuthenticated && <Sidebar />}
-        <main className={`flex-1 ${isAuthenticated ? 'ml-72' : ''} transition-all duration-300`}>
+        <main className={`flex-1 ${isAuthenticated ? 'ml-72' : ''} transition-all duration-300 ${!isAuthenticated ? 'pt-20' : ''}`}>
           <div className="p-8 min-h-screen">
             <div className="max-w-7xl mx-auto">
               <Outlet />

@@ -11,6 +11,7 @@ import {
 const Dashboard = () => {
   const dispatch = useDispatch();
   const { systems, loading, error } = useSelector(state => state.designSystem);
+  const { user } = useSelector(state => state.auth);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [newSystemName, setNewSystemName] = useState('');
 
@@ -49,13 +50,12 @@ const Dashboard = () => {
   const filteredSystems = systems || [];
 
   return (
-    <div className="space-y-8">
-      {/* Header Section */}
+    <div className="space-y-8">      {/* Header Section */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div>
           <h1 className="text-4xl font-bold gradient-text mb-2">Dashboard</h1>
           <p className="text-lg text-secondary-600">
-            Welcome back! Here's what's happening with your design systems.
+            Welcome back, {user?.name || 'User'}! Here's what's happening with your design systems.
           </p>
         </div>
         <div className="mt-4 lg:mt-0">
