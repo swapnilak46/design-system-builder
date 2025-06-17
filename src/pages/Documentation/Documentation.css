@@ -1,0 +1,279 @@
+/* PDF Export Styles */
+.pdf-content {
+  background: white !important;
+  color: #1a202c !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  line-height: 1.6 !important;
+  max-width: none !important;
+}
+
+/* Remove shadows and animations for PDF */
+.pdf-content * {
+  box-shadow: none !important;
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Ensure proper page breaks */
+.page-break {
+  page-break-before: always !important;
+  break-before: page !important;
+}
+
+.page-break:first-child {
+  page-break-before: auto !important;
+  break-before: auto !important;
+}
+
+/* PDF-specific typography */
+.pdf-content h1 {
+  font-size: 2.25rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 1rem !important;
+  color: #1e40af !important;
+}
+
+.pdf-content h2 {
+  font-size: 1.875rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.75rem !important;
+  margin-top: 2rem !important;
+  color: #1f2937 !important;
+}
+
+.pdf-content h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  color: #374151 !important;
+}
+
+.pdf-content p {
+  margin-bottom: 1rem !important;
+  color: #4b5563 !important;
+}
+
+/* PDF-specific spacing */
+.pdf-content .space-y-8 > * + * {
+  margin-top: 2rem !important;
+}
+
+.pdf-content .space-y-6 > * + * {
+  margin-top: 1.5rem !important;
+}
+
+.pdf-content .space-y-4 > * + * {
+  margin-top: 1rem !important;
+}
+
+/* PDF-specific borders and backgrounds */
+.pdf-content .border-b-2 {
+  border-bottom: 2px solid #3b82f6 !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.pdf-content .border {
+  border: 1px solid #d1d5db !important;
+}
+
+.pdf-content .bg-primary-50 {
+  background-color: #eff6ff !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 1rem !important;
+  border-radius: 0.25rem !important;
+}
+
+.pdf-content .bg-secondary-100 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Ensure proper table styling */
+.pdf-content .flex.justify-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.pdf-content .border-dotted {
+  border-style: dotted !important;
+  border-color: #d1d5db !important;
+}
+
+/* Grid layouts for PDF */
+.pdf-content .grid {
+  display: block !important;
+}
+
+.pdf-content .grid > * {
+  margin-bottom: 1rem !important;
+}
+
+/* Flex layouts for PDF */
+.pdf-content .flex {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.pdf-content .flex-1 {
+  flex: 1 !important;
+}
+
+.pdf-content .gap-4 {
+  gap: 1rem !important;
+}
+
+.pdf-content .gap-2 {
+  gap: 0.5rem !important;
+}
+
+/* Color swatches for PDF */
+.pdf-content .w-16.h-16 {
+  width: 4rem !important;
+  height: 4rem !important;
+  border-radius: 0.5rem !important;
+  border: 2px solid #d1d5db !important;
+  flex-shrink: 0 !important;
+}
+
+/* Monospace font for hex codes */
+.pdf-content .font-mono {
+  font-family: 'Courier New', monospace !important;
+}
+
+/* Ensure proper text alignment */
+.pdf-content .text-center {
+  text-align: center !important;
+}
+
+.pdf-content .text-right {
+  text-align: right !important;
+}
+
+/* Remove unnecessary margins/padding that might cause issues */
+.pdf-content .card,
+.pdf-content .card-elevated {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ensure proper font weights */
+.pdf-content .font-semibold {
+  font-weight: 600 !important;
+}
+
+.pdf-content .font-medium {
+  font-weight: 500 !important;
+}
+
+.pdf-content .font-bold {
+  font-weight: 700 !important;
+}
+
+/* Responsive text sizes for PDF */
+.pdf-content .text-sm {
+  font-size: 0.875rem !important;
+}
+
+.pdf-content .text-lg {
+  font-size: 1.125rem !important;
+}
+
+.pdf-content .text-xl {
+  font-size: 1.25rem !important;
+}
+
+.pdf-content .text-4xl {
+  font-size: 2.25rem !important;
+}
+
+/* Footer styling */
+.pdf-content .border-t {
+  border-top: 1px solid #d1d5db !important;
+  padding-top: 2rem !important;
+  margin-top: 2rem !important;
+}
+
+/* Ensure proper rounding is maintained */
+.pdf-content .rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.pdf-content .rounded-full {
+  border-radius: 9999px !important;
+}
+
+/* Ensure proper padding */
+.pdf-content .p-4 {
+  padding: 1rem !important;
+}
+
+.pdf-content .p-6 {
+  padding: 1.5rem !important;
+}
+
+.pdf-content .px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.pdf-content .py-1 {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.pdf-content .pb-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.pdf-content .pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.pdf-content .pb-8 {
+  padding-bottom: 2rem !important;
+}
+
+.pdf-content .pt-8 {
+  padding-top: 2rem !important;
+}
+
+.pdf-content .mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.pdf-content .mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.pdf-content .mb-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+.pdf-content .mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.pdf-content .mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.pdf-content .mt-4 {
+  margin-top: 1rem !important;
+}
+
+/* Print optimizations */
+@media print {
+  .pdf-content {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .pdf-content * {
+    background: transparent !important;
+    color: black !important;
+  }
+}

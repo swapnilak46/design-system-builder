@@ -1,0 +1,163 @@
+.color-palette {
+  @apply space-y-6;
+}
+
+.color-group {
+  @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+}
+
+.color-group-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.color-group-title {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.color-group-badge {
+  @apply px-2 py-1 text-xs font-medium rounded-full;
+}
+
+.color-group-badge.semantic {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.color-group-badge.functional {
+  @apply bg-green-100 text-green-800;
+}
+
+.color-grid {
+  @apply grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-3;
+}
+
+.color-swatch {
+  @apply relative cursor-pointer;
+}
+
+.color-circle {
+  @apply w-12 h-12 rounded-xl border-2 border-white shadow-lg transition-transform duration-200 group-hover:scale-110;
+}
+
+.color-info {
+  @apply mt-2 text-center;
+}
+
+.color-name {
+  @apply text-xs font-medium text-gray-700 truncate;
+}
+
+.color-value {
+  @apply text-xs text-gray-500 font-mono;
+}
+
+.color-alias {
+  @apply text-xs text-blue-600 italic;
+}
+
+.color-contrast-indicator {
+  @apply absolute -top-1 -right-1 w-4 h-4 rounded-full border-2 border-white text-xs flex items-center justify-center font-bold;
+}
+
+.color-contrast-indicator.high {
+  @apply bg-green-500 text-white;
+}
+
+.color-contrast-indicator.medium {
+  @apply bg-yellow-500 text-black;
+}
+
+.color-contrast-indicator.low {
+  @apply bg-red-500 text-white;
+}
+
+.color-editor {
+  @apply bg-gray-50 rounded-lg p-4 mt-4;
+}
+
+.color-input-group {
+  @apply space-y-3;
+}
+
+.color-input-row {
+  @apply flex items-center space-x-3;
+}
+
+.color-input {
+  @apply flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.color-input-hex {
+  @apply w-24 font-mono text-sm;
+}
+
+.color-preview {
+  @apply w-10 h-10 rounded-lg border border-gray-300;
+}
+
+.add-color-button {
+  @apply w-12 h-12 border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center text-gray-400 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200 cursor-pointer;
+}
+
+.add-group-button {
+  @apply w-full py-3 border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200 cursor-pointer;
+}
+
+.color-accessibility-info {
+  @apply mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg;
+}
+
+.accessibility-grid {
+  @apply grid grid-cols-2 gap-2 text-xs;
+}
+
+.accessibility-item {
+  @apply flex justify-between;
+}
+
+.accessibility-ratio {
+  @apply font-mono font-medium;
+}
+
+.accessibility-pass {
+  @apply text-green-600;
+}
+
+.accessibility-fail {
+  @apply text-red-600;
+}
+
+.color-export-options {
+  @apply mt-6 p-4 bg-gray-100 rounded-lg;
+}
+
+.export-format-tabs {
+  @apply flex space-x-1 mb-3;
+}
+
+.export-format-tab {
+  @apply px-3 py-1 text-sm font-medium rounded-md cursor-pointer transition-colors duration-200;
+}
+
+.export-format-tab.active {
+  @apply bg-blue-600 text-white;
+}
+
+.export-format-tab.inactive {
+  @apply bg-white text-gray-700 hover:bg-gray-50;
+}
+
+.export-code-block {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto;
+}
+
+.color-picker-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.color-picker-modal {
+  @apply bg-white rounded-xl p-6 max-w-md w-full mx-4 shadow-2xl;
+}
+
+.gradient-preview {
+  @apply h-20 rounded-lg mb-4;
+}

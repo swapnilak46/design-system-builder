@@ -1,0 +1,203 @@
+.typography-editor {
+  @apply space-y-6;
+}
+
+.font-family-section {
+  @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+}
+
+.font-family-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.font-family-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4;
+}
+
+.font-family-card {
+  @apply border border-gray-200 rounded-lg p-4 hover:border-blue-500 transition-colors duration-200;
+}
+
+.font-family-preview {
+  @apply text-lg mb-2;
+}
+
+.font-family-info {
+  @apply text-sm text-gray-600 space-y-1;
+}
+
+.font-scale-section {
+  @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+}
+
+.font-scale-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.scale-preview-grid {
+  @apply space-y-4;
+}
+
+.scale-item {
+  @apply flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-blue-500 transition-colors duration-200;
+}
+
+.scale-preview {
+  @apply flex-1;
+}
+
+.scale-text-preview {
+  @apply transition-all duration-200;
+}
+
+.scale-info {
+  @apply text-sm text-gray-500 space-y-1;
+}
+
+.scale-controls {
+  @apply flex items-center space-x-3;
+}
+
+.scale-input {
+  @apply w-16 px-2 py-1 border border-gray-300 rounded text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.font-weight-section {
+  @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+}
+
+.weight-grid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-3;
+}
+
+.weight-item {
+  @apply p-3 border border-gray-200 rounded-lg text-center hover:border-blue-500 transition-colors duration-200;
+}
+
+.weight-preview {
+  @apply text-lg mb-1;
+}
+
+.weight-info {
+  @apply text-xs text-gray-500;
+}
+
+.responsive-preview {
+  @apply mt-6 p-4 bg-gray-50 rounded-lg;
+}
+
+.responsive-controls {
+  @apply flex items-center space-x-3 mb-4;
+}
+
+.responsive-button {
+  @apply px-3 py-1 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors duration-200;
+}
+
+.responsive-button.active {
+  @apply bg-blue-600 text-white border-blue-600;
+}
+
+.responsive-preview-content {
+  @apply transition-all duration-300;
+}
+
+.typography-export {
+  @apply mt-6 p-4 bg-gray-100 rounded-lg;
+}
+
+.export-tabs {
+  @apply flex space-x-1 mb-3;
+}
+
+.export-tab {
+  @apply px-3 py-1 text-sm font-medium rounded-md cursor-pointer transition-colors duration-200;
+}
+
+.export-tab.active {
+  @apply bg-blue-600 text-white;
+}
+
+.export-tab.inactive {
+  @apply bg-white text-gray-700 hover:bg-gray-50;
+}
+
+.export-code {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto;
+}
+
+.font-loader {
+  @apply mb-4 flex items-center space-x-3;
+}
+
+.font-load-input {
+  @apply flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.font-load-button {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200;
+}
+
+.typography-preview-panel {
+  @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+}
+
+.preview-content {
+  @apply space-y-6;
+}
+
+.preview-section {
+  @apply border-b border-gray-200 pb-4 last:border-b-0;
+}
+
+.preview-heading {
+  @apply font-semibold text-gray-900 mb-2;
+}
+
+.preview-text {
+  @apply text-gray-700;
+}
+
+.line-height-slider {
+  @apply w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer;
+}
+
+.line-height-slider::-webkit-slider-thumb {
+  @apply appearance-none w-4 h-4 bg-blue-600 rounded-full cursor-pointer;
+}
+
+.letter-spacing-slider {
+  @apply w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer;
+}
+
+.letter-spacing-slider::-webkit-slider-thumb {
+  @apply appearance-none w-4 h-4 bg-blue-600 rounded-full cursor-pointer;
+}
+
+.font-metrics {
+  @apply mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg;
+}
+
+.metrics-grid {
+  @apply grid grid-cols-2 gap-2 text-xs;
+}
+
+.metrics-item {
+  @apply flex justify-between;
+}
+
+.metrics-label {
+  @apply text-gray-600;
+}
+
+.metrics-value {
+  @apply font-mono font-medium text-blue-700;
+}
+
+.add-scale-button {
+  @apply w-full py-3 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200 cursor-pointer;
+}
+
+.remove-scale-button {
+  @apply w-6 h-6 bg-red-500 text-white rounded-full text-xs flex items-center justify-center hover:bg-red-600 transition-colors duration-200;
+}

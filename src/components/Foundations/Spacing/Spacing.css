@@ -1,0 +1,203 @@
+.spacing-editor {
+  @apply space-y-6;
+}
+
+.spacing-section {
+  @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+}
+
+.spacing-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.spacing-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.spacing-item {
+  @apply border border-gray-200 rounded-lg p-4 hover:border-blue-500 transition-colors duration-200;
+}
+
+.spacing-preview {
+  @apply mb-3 flex items-center justify-center;
+}
+
+.spacing-box {
+  @apply bg-blue-500 rounded transition-all duration-200;
+}
+
+.spacing-info {
+  @apply text-center space-y-1;
+}
+
+.spacing-name {
+  @apply font-medium text-gray-900;
+}
+
+.spacing-values {
+  @apply text-sm text-gray-600 space-y-1;
+}
+
+.spacing-usage {
+  @apply text-xs text-gray-500 italic;
+}
+
+.spacing-controls {
+  @apply flex items-center space-x-2 mt-3;
+}
+
+.spacing-input {
+  @apply flex-1 px-2 py-1 border border-gray-300 rounded text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.spacing-visual-preview {
+  @apply bg-gray-50 rounded-lg p-6 mb-6;
+}
+
+.visual-preview-container {
+  @apply bg-white border-2 border-dashed border-gray-300 rounded-lg p-4 relative;
+}
+
+.visual-spacing-demo {
+  @apply space-y-4;
+}
+
+.demo-element {
+  @apply bg-blue-100 border border-blue-300 rounded p-3 text-center text-blue-700;
+}
+
+.spacing-scale-controls {
+  @apply flex items-center space-x-4 mb-4;
+}
+
+.scale-mode-toggle {
+  @apply flex bg-gray-200 rounded-lg p-1;
+}
+
+.scale-mode-button {
+  @apply px-3 py-1 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.scale-mode-button.active {
+  @apply bg-white text-gray-900 shadow-sm;
+}
+
+.scale-mode-button.inactive {
+  @apply text-gray-600 hover:text-gray-900;
+}
+
+.unit-toggle {
+  @apply flex bg-gray-200 rounded-lg p-1;
+}
+
+.unit-button {
+  @apply px-3 py-1 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.unit-button.active {
+  @apply bg-white text-gray-900 shadow-sm;
+}
+
+.unit-button.inactive {
+  @apply text-gray-600 hover:text-gray-900;
+}
+
+.spacing-relationships {
+  @apply mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg;
+}
+
+.relationships-grid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-3;
+}
+
+.relationship-item {
+  @apply text-center;
+}
+
+.relationship-visual {
+  @apply w-full h-8 bg-gradient-to-r from-blue-200 to-blue-400 rounded mb-2;
+}
+
+.relationship-label {
+  @apply text-xs font-medium text-blue-700;
+}
+
+.relationship-ratio {
+  @apply text-xs text-blue-600;
+}
+
+.spacing-export {
+  @apply mt-6 p-4 bg-gray-100 rounded-lg;
+}
+
+.export-tabs {
+  @apply flex space-x-1 mb-3;
+}
+
+.export-tab {
+  @apply px-3 py-1 text-sm font-medium rounded-md cursor-pointer transition-colors duration-200;
+}
+
+.export-tab.active {
+  @apply bg-blue-600 text-white;
+}
+
+.export-tab.inactive {
+  @apply bg-white text-gray-700 hover:bg-gray-50;
+}
+
+.export-code {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto;
+}
+
+.add-spacing-button {
+  @apply w-full py-3 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200 cursor-pointer;
+}
+
+.remove-spacing-button {
+  @apply w-6 h-6 bg-red-500 text-white rounded-full text-xs flex items-center justify-center hover:bg-red-600 transition-colors duration-200;
+}
+
+.spacing-ruler {
+  @apply absolute left-0 top-0 w-full h-full pointer-events-none;
+}
+
+.ruler-line {
+  @apply absolute bg-red-500 opacity-50;
+}
+
+.ruler-line.horizontal {
+  @apply w-full h-px;
+}
+
+.ruler-line.vertical {
+  @apply w-px h-full;
+}
+
+.ruler-label {
+  @apply absolute text-xs font-mono text-red-600 bg-white px-1 rounded;
+}
+
+.spacing-tooltip {
+  @apply absolute z-10 bg-gray-900 text-white text-xs px-2 py-1 rounded shadow-lg pointer-events-none;
+}
+
+.layout-demo {
+  @apply bg-white border border-gray-300 rounded-lg p-4 space-y-4;
+}
+
+.demo-card {
+  @apply bg-gray-100 border border-gray-300 rounded p-3;
+}
+
+.demo-button {
+  @apply bg-blue-500 text-white px-3 py-1 rounded text-sm;
+}
+
+.spacing-accessibility {
+  @apply mt-4 p-3 bg-green-50 border border-green-200 rounded-lg;
+}
+
+.accessibility-info {
+  @apply text-sm text-green-700;
+}
