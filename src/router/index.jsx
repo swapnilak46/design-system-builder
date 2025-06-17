@@ -42,9 +42,16 @@ export const router = createBrowserRouter([
             <DesignSystems />
           </ProtectedRoute>
         ),
+      },      {
+        path: 'design-systems/:id',
+        element: (
+          <ProtectedRoute>
+            <SystemDetail />
+          </ProtectedRoute>
+        ),
       },
       {
-        path: 'design-systems/:id',
+        path: 'system/:id',
         element: (
           <ProtectedRoute>
             <SystemDetail />

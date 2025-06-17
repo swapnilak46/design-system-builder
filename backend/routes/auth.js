@@ -21,7 +21,7 @@ router.get('/google/callback',
     // Successful authentication, redirect to frontend
     const frontendURL = process.env.NODE_ENV === 'production' 
       ? 'https://your-frontend-domain.com' 
-      : 'http://localhost:3000';
+      : process.env.FRONTEND_URL || 'http://localhost:5001'; // Default to port 5001
     res.redirect(`${frontendURL}/dashboard`);
   }
 );

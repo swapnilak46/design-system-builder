@@ -1,0 +1,26 @@
+/* SystemCard specific styles - extends the existing theme */
+.system-card-container {
+  @apply transition-all duration-300 hover:transform hover:scale-[1.02];
+}
+
+.system-card-action-button {
+  @apply transition-all duration-200 hover:shadow-md;
+}
+
+.system-card-delete-button:hover {
+  @apply bg-red-50 text-red-600 border-red-200;
+}
+
+.system-card-rename-button:hover {
+  @apply bg-blue-50 text-blue-600 border-blue-200;
+}
+
+/* Animation for card hover states */
+@keyframes cardPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.system-card-pulse {
+  animation: cardPulse 2s infinite;
+}

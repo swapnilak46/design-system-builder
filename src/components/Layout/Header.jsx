@@ -1,15 +1,20 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import { logout } from '../../store/slices/authSlice';
+import { logoutUser } from '../../store/slices/authSlice';
 
 const Header = () => {
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const handleLogout = () => {
-    dispatch(logout());
-    navigate('/');
+  const handleLogout = async () => {
+    try {
+      await dispatch(logoutUser()).unwrap();
+      navigate('/');
+    } catch (error) {
+      console.error('Logout failed:', error);
+      // Even if logout fails, clear local state and redirect
+      navigate('/');
+    }
   };
 
   return (
